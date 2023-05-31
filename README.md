@@ -1,2 +1,4 @@
-# mefts
-memory efficient fine-tuning by making pre-trained model reversible
+# Memory Efficient Fine-Tuning
+memory efficient fine-tuning by making the pre-trained model reversible
+
+
