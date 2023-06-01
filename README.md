@@ -9,8 +9,8 @@ Official code for paper **Make Your Pre-trained Model Reversible: From Parameter
 
 ## Installation
 ```bash
-conda create -n meft python=3.8
-conda activate meft
+conda create -n mefts python=3.8
+conda activate mefts
 pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
 pip install -r requirements.txt
 ```
