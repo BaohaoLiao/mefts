@@ -16,14 +16,14 @@ pip install -r requirements.txt
 ```
 
 ## Fine-Tuning
-### Run GLUE Experiments with BERT
+#### Run GLUE Experiments with BERT
 - Edit the **#TODO** places in [scripts/bert_glue.sh](/scripts/bert_glue.sh)
 - Run as
   ```bash
   bash scripts/bert_glue.sh
   ```
   
-### Citation
+## Citation
 If you find our work or code useful, please cite as:
   ``` bibtex
 
