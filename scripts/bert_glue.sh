@@ -29,7 +29,7 @@ ARCH="layer"  # choice for F architecture
 ## Task setting
 TOOL=run_glue.py
 SAVE_DIR=  # TODO: directory for saving results
-MODEL_VARIANT=${MODEL_NAME}_farch${ARCH}_x1${FACTOR1}_x2${FACTOR2}_revlayer${LAYERS}_fp16${FP16}_maxnorm${MAX_NORM}_group${GROUP}_dim${DIM}
+MODEL_VARIANT=${MODEL_NAME}_farch${ARCH}_x1${FACTOR1}_x2${FACTOR2}_revlayer${LAYERS}_fp16${FP16}_dim${DIM}
 mkdir -p $SAVE_DIR/${MODEL_VARIANT}
 
 TASKS=(rte)  # TODO: change this for other tasks. Check the task names in run_glue.py
