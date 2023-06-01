@@ -6,7 +6,7 @@ export HF_METRICS_CACHE= # TODO: add the path for downloading from tansformers
 # Hyper-parameters
 MODEL_NAME=bert-base-uncased
 DIM=8
-LAYERS=12 # TODO: set this to 0 if you want to obtain the results of vanilla gradient
+REVLAYERS=12 # TODO: set this to 0 if you want to obtain the results of vanilla gradient
 FP16=false # TODO: set this to true if you want to train in fp16
 MAX_NORM=1 # clipping norm
 GROUP=true # smart padding, save training time
@@ -29,7 +29,7 @@ ARCH="layer"  # choice for F architecture
 ## Task setting
 TOOL=run_glue.py
 SAVE_DIR=  # TODO: directory for saving results
-MODEL_VARIANT=${MODEL_NAME}_farch${ARCH}_x1${FACTOR1}_x2${FACTOR2}_revlayer${LAYERS}_fp16${FP16}_dim${DIM}
+MODEL_VARIANT=${MODEL_NAME}_farch${ARCH}_x1${FACTOR1}_x2${FACTOR2}_revlayer${REVLAYERS}_fp16${FP16}_dim${DIM}
 mkdir -p $SAVE_DIR/${MODEL_VARIANT}
 
 TASKS=(rte)  # TODO: change this for other tasks. Check the task names in run_glue.py
@@ -56,7 +56,7 @@ python -u $TOOL \
   --model_name_or_path ${MODEL_NAME} \
   --f_arch ${ARCH} \
   --adapter_bottleneck_dim ${DIM} \
-  --num_rev_layers $LAYERS --x1_factor ${FACTOR1}  --x2_factor ${FACTOR2} \
+  --num_rev_layers ${REVLAYERS} --x1_factor ${FACTOR1}  --x2_factor ${FACTOR2} \
   --fp16 ${FP16} \
   --seed ${SEEDS[$s]} \
   --task_name ${TASKS[$t]} \
