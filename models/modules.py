@@ -5,9 +5,9 @@ from transformers.activations import ACT2FN
 
 # Adapter architecture
 class Adapter(nn.Module):
-    '''
+    """
     The adapter architecture is borrowed from https://arxiv.org/abs/1902.00751
-    '''
+    """
     def __init__(self, config, layernorm=False):
         super().__init__()
         self.dense1 = nn.Linear(config.hidden_size, config.adapter_bottleneck_dim)
