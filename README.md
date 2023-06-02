@@ -26,5 +26,12 @@ pip install -r requirements.txt
 ## Citation
 If you find our work or code useful, please cite as:
   ``` bibtex
-
+  @misc{liao2023make,
+      title={Make Your Pre-trained Model Reversible: From Parameter to Memory Efficient Fine-Tuning}, 
+      author={Baohao Liao and Shaomu Tan and Christof Monz},
+      year={2023},
+      eprint={2306.00477},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
   ```
