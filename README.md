@@ -1,5 +1,5 @@
 # MEFTs
-Official code for paper **Make Your Pre-trained Model Reversible: From Parameter to Memory Efficient Fine-Tuning**
+Official code for paper **[Make Your Pre-trained Model Reversible: From Parameter to Memory Efficient Fine-Tuning](https://arxiv.org/abs/2306.00477)**
 
 ## Features
 - [x] BERT on GLUE
